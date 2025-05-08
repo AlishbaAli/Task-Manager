@@ -1,7 +1,16 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
-const task = () => {
-  return <div>task</div>;
+const Task = ({ task }) => {
+  return (
+    <div className="task">
+      <p>{task}</p>
+      <div>
+        <FontAwesomeIcon icon={faTrash} />
+      </div>
+    </div>
+  );
 };
 
-export default task;
+export default Task;
